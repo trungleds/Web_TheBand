@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+}
+
+#header {
+  height: 46px;
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav {
+}
+
+.nav li {
+  display: inline-block;
+  position: relative;
+}
+.nav > li > a {
+  color: #fff;
+}
+/* icon */
+.nav i {
+  color: #fff;
+}
+/* end icon */
+
+.nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 26px;
+  display: inline-block;
+}
+
+/* hover vao thang cha hien len thang con */
+.nav li:hover .subnav {
+  display: block;
+}
+/* end hover vao thang cha hien len thang con */
+
+/*  hover the header */
+.nav > li:hover > a,
+.nav .subnav li:hover {
+  color: #000;
+  background-color: #ccc;
+}
+/* end hover the header */
+
+.nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+}
+.nav .subnav a {
+  color: #333;
+}
+
+/* begin search */
+#header .search-btn {
+  padding: 0 21px;
+}
+#header .search-btn:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+#header .search-icon {
+  color: #fff;
+  font-size: 18px;
+  line-height: 46px;
+}
+
+/* end search */
+
+#slider {
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url('/W3_Band/assets/img/slider/slider1.jpg') top center / cover no-repeat ;
+}
+
+#content {
+}
+
+#footer {
+}
